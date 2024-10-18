@@ -7,15 +7,15 @@
     <div class="container__content__forms">
       <div class="input-box">
         <div class="input-title">Nome</div>
-        <input [(ngModel)]="login" type="text" placeholder="Por favor, insira seu nome completo">
+        <input [(ngModel)]="data.fullName" type="text" placeholder="Por favor, insira seu nome completo">
       </div>
       <div class="input-box">
         <div class="input-title">Data de nascimento</div>
-        <input [(ngModel)]="login" type="date">
+        <input [(ngModel)]="data.bornDate" type="date">
       </div>
       <div class="input-box">
         <div class="input-title">CPF</div>
-        <input [(ngModel)]="login" type="text" placeholder="000.000.000-00">
+        <input [(ngModel)]="data.cpf" type="text" placeholder="000.000.000-00">
       </div>
       <button (click)="sendLoginData()">Enviar</button>
     </div>

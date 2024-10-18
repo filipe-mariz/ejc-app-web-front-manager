@@ -10,14 +10,16 @@ import axios from 'axios'
   styleUrl: './worker-enrollment.component.scss'
 })
 export class WorkerEnrollmentComponent {
-  public login: string | undefined;
-  public password: string | undefined;
+  public data = {
+    fullName: "",
+    bornDate: "",
+    cpf: ""
+  }
 
   public async sendLoginData() {
     try {
       const response = await axios.post('http://localhost:3000/health', {
-        login: this.login,
-        password: this.password
+        ...this.data
       });
 
       console.log('response', response)

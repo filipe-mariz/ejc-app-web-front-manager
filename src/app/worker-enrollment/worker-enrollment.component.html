@@ -6,41 +6,18 @@
     <div class="container__content__title">Inscrição dos encontreiros</div>
     <div class="container__content__forms">
       <div class="input-box">
-        <div>Nome</div>
+        <div class="input-title">Nome</div>
         <input [(ngModel)]="login" type="text" placeholder="Por favor, insira seu nome completo">
       </div>
-
       <div class="input-box">
-        <div>Data de nascimento</div>
+        <div class="input-title">Data de nascimento</div>
         <input [(ngModel)]="login" type="date">
       </div>
-
       <div class="input-box">
-        <div>CPF</div>
+        <div class="input-title">CPF</div>
         <input [(ngModel)]="login" type="text" placeholder="000.000.000-00">
       </div>
-
-      <button (click)="sendLoginData()">Entrar</button>
-
+      <button (click)="sendLoginData()">Enviar</button>
     </div>
   </div>
-
-  <!-- <div class="container__content">
-    <div class="container__content__title">
-      <span class="mission">Inscrição</span>
-    </div>
-    <!- <div class="container__content__login-box">
-      <div class="input-box">
-        <input [(ngModel)]="login" type="text" placeholder="Login">
-        <input [(ngModel)]="login" type="text" placeholder="Login">
-        <input [(ngModel)]="password" type="password" placeholder="Senha">
-        <input [(ngModel)]="login" type="text" placeholder="Login">
-        <input [(ngModel)]="password" type="password" placeholder="Senha">
-        <input [(ngModel)]="login" type="text" placeholder="Login">
-        <input [(ngModel)]="password" type="password" placeholder="Senha">
-        <input [(ngModel)]="password" type="password" placeholder="Senha">
-        <button (click)="sendLoginData()">Entrar</button>
-      </div>
-    </div> --
-  </div> -->
 </div>

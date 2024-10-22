@@ -10,3 +10,9 @@ export interface IFormaData {
     thirdOption: string,
   }
 }
+
+export interface ITeamsGroup {
+  fisrtTeamsGroup: Array<string>
+  secondTeamsGroup: Array<string>
+  thirdTeamsGroup: Array<string>
+}

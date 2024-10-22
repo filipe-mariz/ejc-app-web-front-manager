@@ -2,7 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { formData, teamsGroup } from './utils/data';
-import { IFormaData } from './utils/interfaces';
+import { IFormaData, ITeamsGroup } from './utils/interfaces';
 import axios, { AxiosResponse } from 'axios';
 
 @Component({
@@ -17,7 +17,7 @@ import axios, { AxiosResponse } from 'axios';
 })
 export class WorkerEnrollmentComponent {
   public data: IFormaData = formData;
-  public teams = teamsGroup;
+  public teams: ITeamsGroup = teamsGroup;
 
   public async sendLoginData() {
     try {

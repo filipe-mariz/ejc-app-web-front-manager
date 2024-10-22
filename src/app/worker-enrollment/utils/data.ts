@@ -1,4 +1,4 @@
-import { IFormaData } from './interfaces'
+import { IFormaData, ITeamsGroup } from './interfaces'
 
 export const formData: IFormaData = {
   fullName: "",
@@ -13,7 +13,7 @@ export const formData: IFormaData = {
   }
 };
 
-export const teamsGroup = {
+export const teamsGroup: ITeamsGroup = {
   fisrtTeamsGroup: [
     'Bandinha',
     'Biscoito',

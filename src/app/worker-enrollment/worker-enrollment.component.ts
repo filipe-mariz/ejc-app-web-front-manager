@@ -1,28 +1,30 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import axios from 'axios'
+import { formData, teamsGroup } from './utils/data';
+import { IFormaData, ITeamsGroup } from './utils/interfaces';
+import axios, { AxiosResponse } from 'axios';
 
 @Component({
   selector: 'app-worker-enrollment',
   standalone: true,
-  imports: [FormsModule],
+  imports: [
+    FormsModule,
+    NgFor,
+  ],
   templateUrl: './worker-enrollment.component.html',
   styleUrl: './worker-enrollment.component.scss'
 })
 export class WorkerEnrollmentComponent {
-  public data = {
-    fullName: "",
-    bornDate: "",
-    cpf: ""
-  }
+  public data: IFormaData = formData;
+  public teams: ITeamsGroup = teamsGroup;
 
   public async sendLoginData() {
     try {
-      const response = await axios.post('http://localhost:3000/health', {
+      const response: AxiosResponse = await axios.post('http://localhost:3000/health', {
         ...this.data
       });
 
-      console.log('response', response)
       return response;
     } catch (error) {
       throw new Error('AxiosError')

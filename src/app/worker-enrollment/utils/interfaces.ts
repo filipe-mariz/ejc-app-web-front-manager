@@ -1,3 +1,7 @@
+type fisrtTeamsGroup = 'Bandinha' | 'Biscoito' | 'Boa Vontade' | 'Círculos' | 'Cozinha' | 'Decoração' | 'Trânsito';
+type secondTeamsGroup = 'Ordem' | 'Artes' | 'Liturgia' | 'Roteiro' | 'Sonoplastia' | 'Fotografia' | 'Vigília';
+type thirdTeamsGroup =  'Garçons' | 'Correios' | 'Infraestrutura' | 'Secretaria/externa' | 'Minemercado' | 'Saúde' | 'Recepção dos palestrantes';
+
 export interface IFormaData {
   fullName: string,
   church: string,
@@ -11,8 +15,9 @@ export interface IFormaData {
   }
 }
 
+
 export interface ITeamsGroup {
-  fisrtTeamsGroup: Array<string>
-  secondTeamsGroup: Array<string>
-  thirdTeamsGroup: Array<string>
+  fisrtTeamsGroup: Array<fisrtTeamsGroup>
+  secondTeamsGroup: Array<secondTeamsGroup>
+  thirdTeamsGroup: Array<thirdTeamsGroup>
 }

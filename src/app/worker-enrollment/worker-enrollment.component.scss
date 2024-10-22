@@ -60,7 +60,7 @@
           width: 80vw;
         }
 
-        input {
+        input, select {
           width: 80vw;
           height: 8vh;
           border-top: none;
@@ -76,6 +76,7 @@
 
       button {
         margin-top: 2vh;
+        margin-bottom: 10vh;
         background: #2F2F2F;
         width: 80vw;
         height: 5vh;

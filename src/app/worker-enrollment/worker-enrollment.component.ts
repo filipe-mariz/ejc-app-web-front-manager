@@ -10,7 +10,7 @@ import axios, { AxiosResponse } from 'axios';
   standalone: true,
   imports: [
     FormsModule,
-    NgFor
+    NgFor,
   ],
   templateUrl: './worker-enrollment.component.html',
   styleUrl: './worker-enrollment.component.scss'

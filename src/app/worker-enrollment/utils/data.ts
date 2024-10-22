@@ -1,4 +1,4 @@
-import { IFormaData, ITeamsGroup } from './interfaces'
+import { IFormaData, ITeamsGroup } from './interfaces';
 
 export const formData: IFormaData = {
   fullName: "",
